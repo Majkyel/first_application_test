@@ -1,25 +1,23 @@
 const formatDate = (timeInSecond) => {
     
     function clearHours(h) {
-        if(h == 0 || isNaN(h) == true){
+        if (h === 0 || isNaN(h)){
             return '';   
-        } else {
-            return h + 'h ';
-        }
+        } 
+        return h + 'h ';
     };
     
     function clearMinutes(m) {
-        if(m == 0 || isNaN(m) == true) {
+        if (m === 0 || isNaN(m)) {
            return '';
-        } else {
-           return m + 'm ';
-        }
+        } 
+        return m + 'm ';
     };
     
     function clearSeconds(s) {
-        if(s == 0) {
+        if (s === 0) {
             return '';
-        } else if(isNaN(s) == true) {
+        } else if(isNaN(s)) {
             return 0 + 's';      
         } else {
             return s + 's';
